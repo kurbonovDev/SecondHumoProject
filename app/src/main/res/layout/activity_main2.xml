@@ -100,6 +100,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Analytics"
+                android:layout_marginHorizontal="10dp"
                 android:textColor="#479696"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -123,6 +124,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Perfectionism"
+                android:layout_marginHorizontal="10dp"
                 android:textColor="#479696"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -146,6 +148,7 @@
                 android:gravity="center"
                 android:text="Analytics"
                 android:textColor="#479696"
+                android:layout_marginHorizontal="10dp"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
 
@@ -179,6 +182,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Perfectionism"
+                android:layout_marginHorizontal="10dp"
                 android:textColor="#FF7E73"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -201,6 +205,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Analytics"
+                android:layout_marginHorizontal="10dp"
                 android:textColor="#FF7E73"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -231,8 +236,8 @@
                 android:id="@+id/card1"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
                 android:elevation="0dp"
                 app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
@@ -265,7 +270,7 @@
 
                     <TextView
                         android:id="@+id/user_t"
-                        android:layout_width="wrap_content"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
@@ -298,10 +303,10 @@
                 android:id="@+id/card2"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="#F6F5FB"
+                app:cardBackgroundColor="#F5F9F9"
                 app:cardCornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="@id/block1"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -317,9 +322,10 @@
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/user__8__1"
+                        android:src="@drawable/calendar_1"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#479696" />
 
                     <ImageView
                         android:id="@+id/imageView3_c2"
@@ -328,16 +334,17 @@
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/vector"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#479696" />
 
                     <TextView
                         android:id="@+id/user_tc2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:text="Astro-psychological report"
-                        android:textColor="#403572"
+                        android:textColor="#479696"
                         android:textSize="11sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/user_c2"
@@ -350,7 +357,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#403572"
+                        android:textColor="#479696"
                         android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/user_tc2"
@@ -365,11 +372,11 @@
                 android:id="@+id/card3"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="#F6F5FB"
+                app:cardBackgroundColor="#FFF4F4"
                 app:cardCornerRadius="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -386,7 +393,7 @@
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/user__8__1"
+                        android:src="@drawable/check_square_1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -397,16 +404,17 @@
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/vector"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#FF5D50" />
 
                     <TextView
                         android:id="@+id/user_tc3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:text="Astro-psychological report"
-                        android:textColor="#403572"
+                        android:textColor="#FF5D50"
                         android:textSize="11sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/user_c3"
@@ -419,7 +427,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#403572"
+                        android:textColor="#FF5D50"
                         android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/user_tc3"
@@ -434,11 +442,11 @@
                 android:id="@+id/card4"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginBottom="10dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="#F6F5FB"
+                app:cardBackgroundColor="#FDF9FB"
                 app:cardCornerRadius="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/block1"
@@ -455,27 +463,19 @@
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/user__8__1"
+                        android:src="@drawable/heart__4__1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:id="@+id/imageView3_c4"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/vector"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/user_tc4"
-                        android:layout_width="wrap_content"
+                        android:layout_width="130dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:text="Astro-psychological report"
-                        android:textColor="#403572"
+                        android:text="Love Report"
+                        android:textColor="#C93F8D"
                         android:textSize="11sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/user_c4"
@@ -488,7 +488,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#403572"
+                        android:textColor="#C93F8D"
                         android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/user_tc4"
