@@ -218,25 +218,27 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/block1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/repo"
-           >
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/repo">
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:elevation="0dp"
                 app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toStartOf="@id/imageView"
-                app:layout_constraintTop_toBottomOf="@id/repo">
+                app:layout_constraintStart_toStartOf="@id/block1"
+                app:layout_constraintTop_toTopOf="@id/block1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -263,12 +265,14 @@
 
                     <TextView
                         android:id="@+id/user_t"
-                        android:layout_width="110dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
                         android:text="Astro-psychological report"
                         android:textColor="#403572"
                         android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/user"
                         app:layout_constraintTop_toBottomOf="@id/user" />
 
@@ -277,9 +281,11 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
                         android:textColor="#403572"
                         android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/user_t"
                         app:layout_constraintStart_toStartOf="@id/user_t"
                         app:layout_constraintTop_toBottomOf="@id/user_t" />
@@ -287,77 +293,87 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
                 android:elevation="0dp"
                 app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
+                app:layout_constraintEnd_toEndOf="@id/block1"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toEndOf="@+id/card1"
-                app:layout_constraintTop_toTopOf="@id/card1">
+                app:layout_constraintTop_toTopOf="@id/block1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/userq"
+                        android:id="@+id/user_c2"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/calendar_1"
+                        android:src="@drawable/user__8__1"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#479696" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/imageView3_c2"
                         android:layout_width="18dp"
                         android:layout_height="18dp"
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/vector"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#479696" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/user_tt"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Monthly prediction report"
-                        android:textColor="#479696"
-                        android:textSize="12sp"
-                        app:layout_constraintStart_toStartOf="@id/userq"
-                        app:layout_constraintTop_toBottomOf="@id/userq" />
-
-                    <TextView
-                        android:id="@+id/user_t_22"
-                        android:layout_width="110dp"
+                        android:id="@+id/user_tc2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Astro-psychological report"
+                        android:textColor="#403572"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/user_c2"
+                        app:layout_constraintTop_toBottomOf="@id/user_c2" />
+
+                    <TextView
+                        android:id="@+id/user_t_2_c2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#479696"
+                        android:textColor="#403572"
                         android:textSize="10sp"
-                        app:layout_constraintEnd_toEndOf="@+id/user_tt"
-                        app:layout_constraintStart_toStartOf="@id/user_tt"
-                        app:layout_constraintTop_toBottomOf="@id/user_tt" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/user_tc2"
+                        app:layout_constraintStart_toStartOf="@id/user_tc2"
+                        app:layout_constraintTop_toBottomOf="@id/user_tc2" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/card3"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
                 android:elevation="0dp"
+                app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintStart_toStartOf="@id/block1"
                 app:layout_constraintTop_toBottomOf="@id/card1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -365,106 +381,124 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/userqq"
+                        android:id="@+id/user_c3"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/calendar_1"
+                        android:src="@drawable/user__8__1"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#FF5D50" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/imageView3_c3"
                         android:layout_width="18dp"
                         android:layout_height="18dp"
                         android:layout_marginEnd="20dp"
                         android:src="@drawable/vector"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#FF5D50" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/user_ttt"
-                        android:layout_width="110dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Monthlyc  prediction report"
-                        android:textColor="#FF5D50"
-                        android:textSize="12sp"
-                        app:layout_constraintStart_toStartOf="@id/userqq"
-                        app:layout_constraintTop_toBottomOf="@id/userqq" />
-
-                    <TextView
-                        android:id="@+id/user_t_222"
-                        android:layout_width="110dp"
+                        android:id="@+id/user_tc3"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Astro-psychological report"
+                        android:textColor="#403572"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/user_c3"
+                        app:layout_constraintTop_toBottomOf="@id/user_c3" />
+
+                    <TextView
+                        android:id="@+id/user_t_2_c3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#FF5D50"
+                        android:textColor="#403572"
                         android:textSize="10sp"
-                        app:layout_constraintEnd_toEndOf="@+id/user_ttt"
-                        app:layout_constraintStart_toStartOf="@id/user_ttt"
-                        app:layout_constraintTop_toBottomOf="@id/user_ttt" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/user_tc3"
+                        app:layout_constraintStart_toStartOf="@id/user_tc3"
+                        app:layout_constraintTop_toBottomOf="@id/user_tc3" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/card4"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
                 android:elevation="0dp"
+                app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/block1"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toEndOf="@+id/card3"
-                app:layout_constraintTop_toTopOf="@id/card3">
+                app:layout_constraintTop_toBottomOf="@id/card2">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/userqqq"
+                        android:id="@+id/user_c4"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/heart__4__1"
+                        android:src="@drawable/user__8__1"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#FF5D50" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
-
-                    <TextView
-                        android:id="@+id/user_tttt"
-                        android:layout_width="110dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="10dp"
-                        android:text="Love report"
-                        android:textColor="#C93F8D"
-                        android:textSize="12sp"
-                        app:layout_constraintStart_toStartOf="@id/userqqq"
-                        app:layout_constraintTop_toBottomOf="@id/userqqq" />
+                    <ImageView
+                        android:id="@+id/imageView3_c4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/vector"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/user_t_2222"
-                        android:layout_width="110dp"
+                        android:id="@+id/user_tc4"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Astro-psychological report"
+                        android:textColor="#403572"
+                        android:textSize="11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/user_c4"
+                        app:layout_constraintTop_toBottomOf="@id/user_c4" />
+
+                    <TextView
+                        android:id="@+id/user_t_2_c4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:text="Some short description of this type of report."
-                        android:textColor="#C93F8D"
+                        android:textColor="#403572"
                         android:textSize="10sp"
-                        app:layout_constraintEnd_toEndOf="@+id/user_tttt"
-                        app:layout_constraintStart_toStartOf="@id/user_tttt"
-                        app:layout_constraintTop_toBottomOf="@id/user_tttt" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/user_tc4"
+                        app:layout_constraintStart_toStartOf="@id/user_tc4"
+                        app:layout_constraintTop_toBottomOf="@id/user_tc4" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
