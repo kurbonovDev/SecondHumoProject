@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#595085</color>
+
+
+    <color name="red">#FF0000</color>
+
+    <color name="gray">#BEBEBE</color>
+
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="title_text_color">#291C6D</color>
+</resources>

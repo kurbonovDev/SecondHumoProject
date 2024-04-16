@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="News"
+            android:textColor="@color/text_color"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp">
+
+
+                <FrameLayout
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/back_1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Short news title will be here"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/back_2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Short news title will be here"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/frame_3__1_">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Short news title will be here"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="38dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Daily Tasks:"
+            android:textColor="@color/text_color"
+            android:textSize="24sp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="23dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="96dp"
+                    android:layout_height="86dp"
+                    android:layout_marginHorizontal="5dp"
+                    app:cardBackgroundColor="#F6F5FB"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Daily astromeditiaon"
+                            android:textColor="#403572"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="sans-serif-medium"
+                            android:includeFontPadding="false"
+                            android:text="3"
+                            android:textColor="#403572"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignTop="@id/txt1"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/txt1"
+                            android:src="@drawable/im1" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="96dp"
+                    android:layout_height="86dp"
+                    android:layout_marginHorizontal="5dp"
+                    app:cardBackgroundColor="#FFF4F4"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Daily astromeditiaon"
+                            android:textColor="#FF3726"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="sans-serif-medium"
+                            android:includeFontPadding="false"
+                            android:text="2"
+                            android:textColor="#FF5648"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignTop="@id/txt2"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/txt2"
+                            android:src="@drawable/im1"
+                            app:tint="#FF5648" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="96dp"
+                    android:layout_height="86dp"
+                    android:layout_marginHorizontal="5dp"
+                    app:cardBackgroundColor="#F5F9F9"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Daily mantra"
+                            android:textColor="#403572"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="sans-serif-medium"
+                            android:includeFontPadding="false"
+                            android:text="1"
+                            android:textColor="#479696"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignTop="@id/txt3"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/txt3"
+                            android:src="@drawable/im1"
+                            app:tint="#479696" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingStart="28dp"
+                android:text="Your overall progress is "
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:includeFontPadding="false"
+                android:text="60%"
+                android:textColor="#D81B60"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="60"
+            app:indicatorColor="#D81B60"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="6dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_for_intent"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="42dp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="#F6F5FB"
+            app:cardCornerRadius="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cs1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/calendar_1"
+                    app:layout_constraintStart_toStartOf="@id/cs1"
+                    app:layout_constraintTop_toTopOf="@id/cs1" />
+
+                <TextView
+                    android:id="@id/txt1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:text="How was your day?"
+                    android:textSize="16sp"
+                    android:textColor="#403572"
+                    app:layout_constraintStart_toEndOf="@id/im1"
+                    app:layout_constraintTop_toTopOf="@id/cs1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipscing elit. Ut vel odio en urna ultrice..."
+                    android:textSize="12sp"
+                    android:textColor="#403572"
+                    app:layout_constraintEnd_toStartOf="@id/arrow1"
+                    app:layout_constraintStart_toEndOf="@id/im1"
+                    app:layout_constraintTop_toTopOf="@id/txt1" />
+
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/arrow_right_1"
+                    app:layout_constraintBottom_toBottomOf="@id/cs1"
+                    app:layout_constraintEnd_toEndOf="@id/cs1"
+                    app:layout_constraintTop_toTopOf="@id/cs1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="42dp"
+            android:elevation="0dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#FFF4F4"
+            app:cardCornerRadius="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cs2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/im2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@drawable/clock__1__1"
+                    app:layout_constraintStart_toStartOf="@id/cs2"
+                    app:layout_constraintTop_toTopOf="@id/cs2" />
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:text="How was your day?"
+                    android:textSize="16sp"
+                    android:textColor="#FF5648"
+                    app:layout_constraintStart_toEndOf="@id/im2"
+                    app:layout_constraintTop_toTopOf="@id/cs2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:text="This is demonstrate siblings, hobbies, efforts, confidence, friends and short tr..."
+                    android:textColor="#A27A7A"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toStartOf="@id/arrow2"
+                    app:layout_constraintStart_toEndOf="@id/im2"
+                    app:layout_constraintTop_toTopOf="@id/tv_text" />
+
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/arrow_right_1"
+                    app:layout_constraintBottom_toBottomOf="@id/cs2"
+                    app:tint="#FF5648"
+                    app:layout_constraintEnd_toEndOf="@id/cs2"
+                    app:layout_constraintTop_toTopOf="@id/cs2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
