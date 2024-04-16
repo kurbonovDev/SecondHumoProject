@@ -65,7 +65,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Change profile"
+            android:text="@string/my_text"
             android:textColor="@color/text_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView"

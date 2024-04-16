@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">SecondHumoProject</string>
-
+    <string name="underlined_text"><![CDATA[<u>Текст с подчеркиванием</u>]]></string>
+    <string name="your_string_here"><![CDATA[This is an <u>underline</u>.]]></string>
+    <string name="my_text"><u>Change profile</u>.</string>
 </resources>
