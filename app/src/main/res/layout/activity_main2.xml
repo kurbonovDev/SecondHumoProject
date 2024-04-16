@@ -38,14 +38,12 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="175dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="70dp"
             android:text="Angelica Jackson"
             android:textColor="@color/text_color"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 
@@ -54,6 +52,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:alpha="0.6"
+
             android:text="Analyzer"
             android:textColor="@color/text_color"
             android:textSize="12sp"
@@ -79,6 +79,7 @@
             android:layout_marginTop="30dp"
             android:text="Strong side:"
             android:textColor="#595085"
+            android:textStyle="bold"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -90,6 +91,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#F5F9F9"
             app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
             app:layout_constraintStart_toStartOf="@+id/textView3"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -98,9 +100,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:gravity="center"
                 android:text="Analytics"
-                android:layout_marginHorizontal="10dp"
                 android:textColor="#479696"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -114,6 +116,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#F5F9F9"
             app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -122,9 +125,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:gravity="center"
                 android:text="Perfectionism"
-                android:layout_marginHorizontal="10dp"
                 android:textColor="#479696"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -137,6 +140,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#F5F9F9"
             app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
             app:layout_constraintStart_toEndOf="@+id/cardView2"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -145,10 +149,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:gravity="center"
                 android:text="Analytics"
                 android:textColor="#479696"
-                android:layout_marginHorizontal="10dp"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
 
@@ -161,6 +165,7 @@
             android:text="Weak side:"
             android:textColor="#595085"
             android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
@@ -172,6 +177,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#FFF4F4"
             app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
             app:layout_constraintStart_toStartOf="@id/weak"
             app:layout_constraintTop_toBottomOf="@+id/weak">
 
@@ -180,9 +186,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:gravity="center"
                 android:text="Perfectionism"
-                android:layout_marginHorizontal="10dp"
                 android:textColor="#FF7E73"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -195,6 +201,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="#FFF4F4"
             app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
             app:layout_constraintStart_toEndOf="@id/perf"
             app:layout_constraintTop_toBottomOf="@+id/weak">
 
@@ -203,9 +210,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
                 android:gravity="center"
                 android:text="Analytics"
-                android:layout_marginHorizontal="10dp"
                 android:textColor="#FF7E73"
                 android:textSize="12sp" />
         </androidx.cardview.widget.CardView>
@@ -218,14 +225,21 @@
             android:layout_marginTop="40dp"
             android:text="My Reports:"
             android:textColor="#595085"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@id/perf" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <GridLayout
             android:id="@+id/block1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -236,14 +250,13 @@
                 android:id="@+id/card1"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginTop="20dp"
-                android:elevation="0dp"
+                android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="#F6F5FB"
                 app:cardCornerRadius="16dp"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toStartOf="@id/block1"
-                app:layout_constraintTop_toTopOf="@id/block1">
+                app:cardElevation="0dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -287,6 +300,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
+                        android:alpha="0.5"
                         android:text="Some short description of this type of report."
                         android:textColor="#403572"
                         android:textSize="10sp"
@@ -303,14 +317,13 @@
                 android:id="@+id/card2"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="30dp"
-                android:elevation="0dp"
                 app:cardBackgroundColor="#F5F9F9"
                 app:cardCornerRadius="16dp"
-                app:layout_constraintEnd_toEndOf="@id/block1"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintTop_toTopOf="@id/block1">
+                app:cardElevation="0dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -343,7 +356,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:text="Astro-psychological report"
+                        android:text="Monthly prediction report"
                         android:textColor="#479696"
                         android:textSize="11sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -356,6 +369,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
+                        android:alpha="0.5"
                         android:text="Some short description of this type of report."
                         android:textColor="#479696"
                         android:textSize="10sp"
@@ -372,16 +386,13 @@
                 android:id="@+id/card3"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="30dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="0dp"
+                android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="#FFF4F4"
                 app:cardCornerRadius="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintStart_toStartOf="@id/block1"
-                app:layout_constraintTop_toBottomOf="@id/card1">
+                app:cardElevation="0dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -413,7 +424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:text="Astro-psychological report"
+                        android:text="Daily Prediction"
                         android:textColor="#FF5D50"
                         android:textSize="11sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -426,6 +437,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
+                        android:alpha="0.5"
                         android:text="Some short description of this type of report."
                         android:textColor="#FF5D50"
                         android:textSize="10sp"
@@ -442,16 +454,13 @@
                 android:id="@+id/card4"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="0dp"
                 app:cardBackgroundColor="#FDF9FB"
                 app:cardCornerRadius="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/block1"
-                app:layout_constraintHorizontal_chainStyle="spread_inside"
-                app:layout_constraintTop_toBottomOf="@id/card2">
+                app:cardElevation="0dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -487,6 +496,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
+                        android:alpha="0.5"
                         android:text="Some short description of this type of report."
                         android:textColor="#C93F8D"
                         android:textSize="10sp"
@@ -498,7 +508,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </GridLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
