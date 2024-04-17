@@ -13,8 +13,8 @@ import com.example.secondhumoproject.databinding.ActivityMain2Binding
 class MainActivity2 : AppCompatActivity() {
 
     private lateinit var binding: ActivityMain2Binding
-    private var strongList = listOf("Smart","Strong","Smart","Strong","Smart","Strong","Smart","Strong")
-    private var weakList = listOf("Dumb","weak","Dumb","weak","Dumb","weak","Dumb","weak","Dumb","weak","Dumb","weak")
+    private var strongList = listOf("Analytics","Perfectionism","Analytics","Strong","Analytics","Perfectionism","Analytics")
+    private var weakList = listOf("Perfectionism","Analytics","Aggressive","Perfectionism","Analytics","Aggressive",)
 
     private lateinit var rcViewStrong: RecyclerView
     private lateinit var rcViewWeak: RecyclerView
