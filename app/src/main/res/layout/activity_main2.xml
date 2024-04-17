@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,510 +8,135 @@
     tools:context=".MainActivity2">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="135dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/photo1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="110dp"
-            android:src="@drawable/group_15"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="28dp"
-            android:text="Angelica Jackson"
-            android:textColor="@color/text_color"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
-
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:alpha="0.6"
-
-            android:text="Analyzer"
-            android:textColor="@color/text_color"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/my_text"
-            android:textColor="@color/text_color"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Strong side:"
-            android:textColor="#595085"
-            android:textStyle="bold"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#F5F9F9"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:gravity="center"
-                android:text="Analytics"
-                android:textColor="#479696"
-                android:textSize="12sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#F5F9F9"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:gravity="center"
-                android:text="Perfectionism"
-                android:textColor="#479696"
-                android:textSize="12sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#F5F9F9"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toEndOf="@+id/cardView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:gravity="center"
-                android:text="Analytics"
-                android:textColor="#479696"
-                android:textSize="12sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <TextView
-            android:id="@+id/weak"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Weak side:"
-            android:textColor="#595085"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/perf"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#FFF4F4"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toStartOf="@id/weak"
-            app:layout_constraintTop_toBottomOf="@+id/weak">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:gravity="center"
-                android:text="Perfectionism"
-                android:textColor="#FF7E73"
-                android:textSize="12sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            app:cardBackgroundColor="#FFF4F4"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="0dp"
-            app:layout_constraintStart_toEndOf="@id/perf"
-            app:layout_constraintTop_toBottomOf="@+id/weak">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:gravity="center"
-                android:text="Analytics"
-                android:textColor="#FF7E73"
-                android:textSize="12sp" />
-        </androidx.cardview.widget.CardView>
-
-
-        <TextView
-            android:id="@+id/repo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="My Reports:"
-            android:textColor="#595085"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@id/perf" />
-
-
-        <GridLayout
-            android:id="@+id/block1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="28dp"
-            android:alignmentMode="alignMargins"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/repo">
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card1"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="#F6F5FB"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/user"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/user__8__1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/vector"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/user_t"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Astro-psychological report"
-                        android:textColor="#403572"
-                        android:textSize="11sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/user"
-                        app:layout_constraintTop_toBottomOf="@id/user" />
-
-                    <TextView
-                        android:id="@+id/user_t_2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.5"
-                        android:text="Some short description of this type of report."
-                        android:textColor="#403572"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/user_t"
-                        app:layout_constraintStart_toStartOf="@id/user_t"
-                        app:layout_constraintTop_toBottomOf="@id/user_t" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card2"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="20dp"
-                app:cardBackgroundColor="#F5F9F9"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/user_c2"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/calendar_1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#479696" />
-
-                    <ImageView
-                        android:id="@+id/imageView3_c2"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/vector"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#479696" />
-
-                    <TextView
-                        android:id="@+id/user_tc2"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Monthly prediction report"
-                        android:textColor="#479696"
-                        android:textSize="11sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/user_c2"
-                        app:layout_constraintTop_toBottomOf="@id/user_c2" />
-
-                    <TextView
-                        android:id="@+id/user_t_2_c2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.5"
-                        android:text="Some short description of this type of report."
-                        android:textColor="#479696"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/user_tc2"
-                        app:layout_constraintStart_toStartOf="@id/user_tc2"
-                        app:layout_constraintTop_toBottomOf="@id/user_tc2" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card3"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="#FFF4F4"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/user_c3"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/check_square_1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/imageView3_c3"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/vector"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="#FF5D50" />
-
-                    <TextView
-                        android:id="@+id/user_tc3"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Daily Prediction"
-                        android:textColor="#FF5D50"
-                        android:textSize="11sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/user_c3"
-                        app:layout_constraintTop_toBottomOf="@id/user_c3" />
-
-                    <TextView
-                        android:id="@+id/user_t_2_c3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.5"
-                        android:text="Some short description of this type of report."
-                        android:textColor="#FF5D50"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/user_tc3"
-                        app:layout_constraintStart_toStartOf="@id/user_tc3"
-                        app:layout_constraintTop_toBottomOf="@id/user_tc3" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card4"
-                android:layout_width="0dp"
-                android:layout_height="130dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="20dp"
-                app:cardBackgroundColor="#FDF9FB"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/user_c4"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        android:src="@drawable/heart__4__1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-
-                    <TextView
-                        android:id="@+id/user_tc4"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Love Report"
-                        android:textColor="#C93F8D"
-                        android:textSize="11sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@id/user_c4"
-                        app:layout_constraintTop_toBottomOf="@id/user_c4" />
-
-                    <TextView
-                        android:id="@+id/user_t_2_c4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:alpha="0.5"
-                        android:text="Some short description of this type of report."
-                        android:textColor="#C93F8D"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/user_tc4"
-                        app:layout_constraintStart_toStartOf="@id/user_tc4"
-                        app:layout_constraintTop_toBottomOf="@id/user_tc4" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</ScrollView>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/photo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="110dp"
+        android:src="@drawable/group_15"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:text="Angelica Jackson"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha="0.6"
+
+        android:text="Analyzer"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_text"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Strong side:"
+        android:textColor="#595085"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/weak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Weak side:"
+        android:textColor="#595085"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/rcView1" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/weak"
+        app:layout_constraintTop_toBottomOf="@+id/weak" />
+
+    <TextView
+        android:id="@+id/repo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="My Reports:"
+        android:textColor="#595085"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/rcView2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/repo"
+        app:layout_constraintTop_toBottomOf="@id/repo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
