@@ -24,13 +24,13 @@ class Adapter(private val list: List<String>, private val side: Boolean= true) :
         return when (viewType) {
             STRONG -> {
                 val itemView = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.strong_chapter, parent, false)
+                    .inflate(R.layout.strong_side, parent, false)
                 StrongHolder(itemView)
             }
 
             WEAK -> {
                 val itemView = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.weak_chapter, parent, false)
+                    .inflate(R.layout.weak_side, parent, false)
                 WeakHolder(itemView)
             }
 
