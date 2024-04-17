@@ -1,4 +1,4 @@
-package com.example
+package com.example.secondhumoproject.adapters
 
 import android.view.LayoutInflater
 import android.view.View
